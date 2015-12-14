@@ -1,0 +1,43 @@
+What is structure for java project
+src
+   com->kau->learn->dao
+test
+bin or classes
+dist
+lib
+c
+ 
+
+javac -sourcepath ./src -d ../bin com/kau/learn/domain/*.java com/kau/learn/dao/*.java com/kau/learn/daoimpl/*.java  com/kau/learn/*.java
+
+
+javac -sourcepath ./src -d ../bin com/kau/learn/domain/*.java com/kau/learn/dao/*.java com/kau/learn/daoimpl/*.java  com/kau/learn/*.java -cp ../lib/*.jar
+
+java com/kau/learn/Application
+
+java -cp lib/joda-time-2.9.jar:bin com.kau.learn.Application
+
+java -cp lib/*:bin com.kau.learn.Application
+
+manifest.txt
+Main-Class: com.kau.learn.Application
+Class-Path: lib/joda-time-2.9.jar
+
+
+Go to bin
+jar -cvfm learn.jar ../manifest.txt ../lib/joda-time-2.9.jar  .
+mv learn.jar ../
+
+cd ..
+java -jar learn.jar
+
+
+
+use in different project 
+
+======== 
+
+we will put this code into subversion
+
+=======
+
