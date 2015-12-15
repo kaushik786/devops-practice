@@ -8,6 +8,8 @@ import com.kau.learn.dao.PersonDao;
 import com.kau.learn.domain.Address;
 import com.kau.learn.domain.Person;
 
+
+// This is implementation class for PersonDao
 public class PersonDaoImpl implements PersonDao {
 	
 	
